@@ -1,0 +1,52 @@
+body{
+    background-color: #dedede;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dedede;
+
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;        
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 1rem;
+}
+h2{
+    background-color: rgb(249, 250, 215);
+}
+#frase{
+    color: rgb(255, 136, 0);
+}
+#rodape{
+    text-align: right;
+    font-size: small;
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 1rem;
+}
+#iframe{
+    text-align: center;
+}
+button {
+    background-color: #9dcff8;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #002fff;
+}
