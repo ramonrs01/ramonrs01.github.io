@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagina Pessoal</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    footer {
+      background-color: #ffffff; /* tom claro igual à imagem */
+    }
+    body{
+        background-color: #dedede;
+    }
+    footer .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: #222;
+      color: white;
+      border-radius: 5px;
+      margin-right: 0.5rem;
+      text-decoration: none;
+    }
+  img {
+  max-width: 100%;
+  max-height: 15rem;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="container py-3 d-flex justify-content-between align-items-center">
+    <h1 class="h4 m-0">Pagina Pessoal</h1>
+    <div>
+      <a href="https://www.instagram.com/ramonrs01/" target="_blank" class="text-dark me-3">
+        <i class="bi bi-instagram fs-4"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/ramonrs01/" target="_blank" class="text-dark me-3">
+        <i class="bi bi-linkedin fs-4"></i>
+      </a>
+      <a href="https://github.com/ramonrs01" target="_blank" class="text-dark">
+        <i class="bi bi-github fs-4"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Seção de Projetos -->
+  <main class="container my-4">
+    <h2 class="mb-4">Projetos Feitos:</h2>
+  
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="projetosTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="jogos-tab" data-bs-toggle="tab" data-bs-target="#jogos" type="button" role="tab" aria-controls="jogos" aria-selected="true">
+          Jogos
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="sistemas-tab" data-bs-toggle="tab" data-bs-target="#sistemas" type="button" role="tab" aria-controls="sistemas" aria-selected="false">
+          Sistemas
+        </button>
+      </li>
+      
+    </ul>
+  
+    <!-- Tab panes -->
+    <div class="tab-content pt-3">
+      <!-- Aba Sistemas -->
+      <div class="tab-pane fade" id="sistemas" role="tabpanel" aria-labelledby="sistemas-tab">
+        <div class="row g-4">
+          <!-- Prova -->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="corretor.jpg" class="card-img-top" alt="Imagem Sistema 1">
+              <div class="card-body text-center">
+                <h5 class="card-title">Corretor de Prova</h5>
+                <p class="card-text text-justify">
+                  Sistema de correção automática de provas. Permite filtrar resultados por nome do aluno ou exibir todas as avaliações caso o campo de busca permaneça em branco.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="https://ramonrs01.infinityfreeapp.com/sistema_prova" target="_blank" class="btn btn-primary">Acessar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Sistema RH -->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="rh.jpg" class="card-img-top" alt="Imagem Sistema 2">
+              <div class="card-body">
+                <h5 class="card-title text-center">Sistema RH(BETA)</h5>
+                <p class="card-text text-justify">
+                  Plataforma de gestão de recursos humanos com dois módulos principais: 
+                  administrativo e colaborador. O administrador pode cadastrar e gerenciar documentos e funcionários. 
+                  Os colaboradores podem acessar documentos disponibilizados, mediante senha de acesso exclusiva do administrador, e enviar comprovantes, como atestados. 
+                  Algumas funcionalidades estão em desenvolvimento, sendo a principal já disponível o gerenciamento e download de documentos.
+                </p>
+               </div>
+              <div class="card-footer text-center">
+                <a href="https://ramonrs01.infinityfreeapp.com/sis_rh/" target="_blank" class="btn btn-primary">Acessar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Sistema restaurante -->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="restaurante.png" width="120px" class="card-img-top" alt="Imagem Sistema 2">
+              <div class="card-body text-center">
+                <h5 class="card-title">Sistema Restaurante</h5>
+                <p class="card-text">
+                  Aplicação para gerenciamento de comandas. Permite registrar pedidos associados à comanda, consultar consumos e finalizar atendimentos, gerando automaticamente o total a ser pago pelo cliente.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="https://ramonrs01.infinityfreeapp.com/sis_restaurante/" target="_blank" class="btn btn-primary">Acessar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Reserva aula -->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://media.istockphoto.com/id/1400204803/pt/vetorial/online-booking-vector-illustration-digital-appointment-booking.jpg?s=612x612&w=0&k=20&c=YSXhCm5Nze3o0OcJ8O3MpEXOVG5lOMbLpRmMR-RYrtI=" tyle="width: 150%; height: auto; class="card-img-top" alt="Imagem Sistema 2">
+              <div class="card-body text-center">
+                <h5 class="card-title">Reserva de sala</h5>
+                <p class="card-text">
+                  Sistema de agendamento de salas. Permite reservar horários e verificar a disponibilidade em tempo real.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="https://ramonrs01.infinityfreeapp.com/reserva_aula" target="_blank" class="btn btn-primary">Acessar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Sistema Estoque -->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="controle.png" style="width: 100%; height: auto;" class="card-img-top" alt="Imagem Sistema 2">
+              <div class="card-body text-center">
+                <h5 class="card-title">Controle de Estoque</h5>
+                <p class="card-text">
+                  Sistema para gestão de estoque. Permite cadastrar fornecedores, incluir produtos e realizar atualizações no inventário em tempo real.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="https://ramonrs01.infinityfreeapp.com/sis_controle/" target="_blank" class="btn btn-primary">Acessar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Aba Jogos -->
+      <div class="tab-pane fade show active" id="jogos" role="tabpanel" aria-labelledby="jogos-tab">
+        <div class="row g-4">
+          <!-- SADC -->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">SADC - Controle um país</h5>
+                <p class="card-text">
+                  🌍 Simulador interativo onde você toma decisões estratégicas para fortalecer um país do bloco econômico SADC.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="https://ramonrs01.infinityfreeapp.com/sadc/index.php" target="_blank" class="btn btn-primary">Acessar</a>
+              </div>
+            </div>
+          </div>
+          <!-- FisiQuiz-->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">FisiQuiz – Perguntas sobre circuitos</h5>
+                <p class="card-text">
+                  ⚡ Desafie seus conhecimentos com este quiz cheio de questões sobre circuitos elétricos.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="https://ramonrs01.github.io/fisiquiz/" target="_blank" class="btn btn-primary">Acessar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Bandeiras -->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">Adivinhar Bandeiras (MUNDO)</h5>
+                <p class="card-text">
+                  🚩 Teste sua memória adivinhando bandeiras de todos os países do mundo. Filtre por continente e aprenda geografia de forma divertida!
+                </p>   
+              </div>
+              <div class="card-footer text-center">
+                <a href="https://ramonrs01.github.io/adivinhaBandeirasMundo/" target="_blank" class="btn btn-primary">Acessar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Térmico-->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">Termico – Termo de Fisica</h5>
+                <p class="card-text">
+                  🔥 Inspirado no jogo Termo, esta versão traz palavras relacionadas à Física para você tentar acertar.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="https://ramonrs01.github.io/termico/" target="_blank" class="btn btn-primary">Acessar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Jogo da velha-->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">Jogo da velha</h5>
+                <p class="card-text">
+                  ❌⭕ Clássico jogo da velha com modo para dois jogadores ou contra o computador.
+                </p> 
+              </div>
+              <div class="card-footer text-center">
+                <a href="https://ramonrs01.github.io/jogodavelha/" target="_blank" class="btn btn-primary">Acessar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Urna Eletronica-->
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title"> Urna Eletronica</h5>
+                <p class="card-text">
+                  🗳️ Simulador de urna eletrônica completo: vote, apure resultados e gerencie candidatos na tela do Administrador.
+                </p> 
+              </div>
+              <div class="card-footer text-center">
+                <a href="https://ramonrs01.infinityfreeapp.com/urna_eletronica/ " target="_blank" class="btn btn-primary">Acessar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+
+  <!-- Rodapé -->
+  <footer class="py-4 mt-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-3 mb-md-0">
+        *A maioria dos Sistemas foram feitos em grupos. 
+      </div>
+      <div class="mb-3 mb-md-0">
+        V2.5 - Atualizado em: 05/07/2025
+      </div>
+      <div class="text-center text-md-end">
+        <div class="text-center"><strong>Localização</strong></div>
+        <div>Belo Horizonte, Minas Gerais</div>
+        <div class="social-icons mt-2 text-center">
+          <a href="https://www.instagram.com/ramonrs01/" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://github.com/ramonrs01" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ramonrs01/" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (opcional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
